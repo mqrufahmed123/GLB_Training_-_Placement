@@ -10,5 +10,4 @@ int main(){
     }else{
         cout<<"It's not a leap year";
     }
-    
 }
