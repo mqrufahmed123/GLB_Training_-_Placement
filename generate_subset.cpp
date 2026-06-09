@@ -22,6 +22,10 @@ void generate_sub(vector<int>& arr, int i, vector<int>& curr){
     generate_sub(arr, i+1, curr);
 }
 
+void generate_bit_manip(vector<int> arr){
+    
+}
+
 int main(){
     vector<int> arr = {1, 2, 3, 4};
     vector<int> curr;
