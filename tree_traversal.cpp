@@ -27,6 +27,27 @@ Node* createTree(int data, Node* root){
     return root;
 }
 
+void level_order(Node* root){
+    queue<Node*> q;
+    if(!root){
+        return;
+    }
+    q.push(root);
+    while(!q.empty()){
+        Node* curr = q.front();
+        q.pop();
+
+        cout<<curr->data<<" ";
+
+        if(curr->left){
+            q.push(curr->left);
+        }
+        if(curr->right){
+            q.push(curr->right);
+        }
+    }
+}
+
 void inorder(Node* root){
     if(root == nullptr){
         return;
@@ -46,5 +67,7 @@ int main(){
     root = createTree(19, root);
     
     inorder(root);
+    cout<<"Level order traversal: ";
+    level_order(root);
 
 }
