@@ -11,7 +11,6 @@ bool isBalanced(string str){
             if(st.empty()){
                 return false;
             }
-
             char topEle = st.top();
             if(topEle == '(' && ele == ')'
             ||topEle == '{' && ele == '}'
