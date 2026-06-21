@@ -22,7 +22,6 @@ bool isBalanced(string str){
         }
     }
     return true;
-
 }
 
 int main(){
